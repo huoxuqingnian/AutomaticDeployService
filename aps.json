@@ -1,0 +1,45 @@
+[
+  {
+    "server": {
+      "host": "192.168.1.1",
+      "username": "test",
+      "password": "test",
+      "port": 22,
+      "timeout": 10
+    },
+    "jars": [
+      {
+        "index": 1,
+        "filename": "spring-test-0.0.1-SNAPSHOT.jar",
+        "local_path": "/Users/xxx/Documents/code/spring-test/target",
+        "remote_path": "/home/xxx/test",
+        "log_filename": "spring-test.log"
+      },
+      {
+        "index": 2,
+        "filename": "spring-test-0.0.1-SNAPSHOT.jar",
+        "local_path": "/Users/xxx/Documents/code/spring-test/target",
+        "remote_path": "/home/xxx/test",
+        "log_filename": "spring-test.log"
+      }
+    ]
+  },
+  {
+    "server": {
+      "host": "127.0.0.1",
+      "username": "test",
+      "password": "test",
+      "port": 22,
+      "timeout": 10
+    },
+    "jars": [
+      {
+        "index": 3,
+        "filename": "spring-test-0.0.1-SNAPSHOT.jar",
+        "local_path": "/Users/xxx/Documents/code/spring-test/target",
+        "remote_path": "/home/xxx/test",
+        "log_filename": "spring-test.log"
+      }
+    ]
+  }
+]
