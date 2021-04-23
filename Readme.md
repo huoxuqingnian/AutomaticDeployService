@@ -48,7 +48,6 @@
 
 1. 该脚本只能备份上一次 jar 文件, 如需要保留多份备份文件请自行修改 `backup_file()` 方法
 2. 配置文件中 `jars:index` 节点请勿重复配置, 否则都会执行
-3. 如修改配置文件名/路径，请修改 `CONFIG_FILE_PATH` 及 `CONFIG_FILE_NAME` 变量
 
 ## 五 更新日志
 
