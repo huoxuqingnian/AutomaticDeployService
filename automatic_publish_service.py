@@ -9,7 +9,7 @@ import paramiko
 SCRIPT_AUTHOR = "tian_p"
 SCRIPT_BUILD_TIME = "2021-04-22"
 SCRIPT_VERSION = "1.0"
-GITHUB_ADDRESS = 'https://github.com/huoxuqingnian/AutomaticPublishService'
+GITHUB_ADDRESS = 'https://github.com/huoxuqingnian/AutomaticDeployService'
 
 # 配置文件
 DEFAULT_CONFIG_FILE_PATH = "./"
@@ -247,7 +247,7 @@ author_info()
 find_config_file()
 config_json = load_config_file()
 config_print()
-jar_index = input("请输入需要发布的 jar 文件索引(多个使用 '{}' 隔开; 全部使用 '{}'): "
+jar_index = input("请输入需要部署的 jar 文件索引(多个使用 '{}' 隔开; 全部使用 '{}'): "
                   .format(CONFIG_INDEX_SEPARATOR, ALL_CONFIG_INDEX))
 jar_index = jar_index.split(CONFIG_INDEX_SEPARATOR)
 file_num = 0
@@ -284,4 +284,4 @@ for config in config_json:
     close_sftp()
     close_ssh()
 total_cost = time.perf_counter() - start
-print('\r脚本执行结束, 总计 {} 个文件, 总耗时 {:.2f} 秒'.format(file_num, total_cost))
+print('\r脚本执行结束, 总计部署 {} 个 jar 文件, 总耗时 {:.2f} 秒'.format(file_num, total_cost))
