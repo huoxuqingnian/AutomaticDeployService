@@ -231,7 +231,6 @@ def find_config_file():
     if config_files:
         if len(config_files) == 1:
             DEFAULT_CONFIG_FILE_NAME = config_files[0]
-            print("使用配置文件 {}".format(DEFAULT_CONFIG_FILE_NAME))
         else:
             print("匹配到多个配置文件:")
             index = 0
