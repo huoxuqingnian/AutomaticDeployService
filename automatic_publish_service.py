@@ -263,12 +263,12 @@ for config in config_json:
     port = server_config[CONFIG_NODE_SERVER_PORT]
     timeout = server_config[CONFIG_NODE_SERVER_TIMEOUT]
     transport = get_transport()
+    ssh = get_ssh()
     for jars_config in filter_configs:
         filename = jars_config[CONFIG_NODE_JARS_FILENAME]
         local_path = jars_config[CONFIG_NODE_JARS_LOCAL_PATH]
         remote_path = jars_config[CONFIG_NODE_JARS_REMOTE_PATH]
         log_filename = jars_config[CONFIG_NODE_JARS_LOG_FILENAME]
-        ssh = get_ssh()
         pid = get_pid()
         if pid:
             shutdown_process()
