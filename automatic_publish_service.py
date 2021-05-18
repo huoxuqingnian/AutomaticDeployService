@@ -7,8 +7,8 @@ import paramiko
 
 # 作者信息
 SCRIPT_AUTHOR = "tian_p"
-SCRIPT_BUILD_TIME = "2021-04-22"
-SCRIPT_VERSION = "1.0"
+SCRIPT_BUILD_TIME = "2021-05-10"
+SCRIPT_VERSION = "2.3"
 GITHUB_ADDRESS = 'https://github.com/huoxuqingnian/AutomaticDeployService'
 
 # 配置文件
@@ -276,11 +276,11 @@ for config in config_json:
         start_time = time.perf_counter()
         sftp = get_sftp()
         upload_file()
+        close_sftp()
         file_num += 1
         run_jar()
         print()
     close_transport()
-    close_sftp()
     close_ssh()
 total_cost = time.perf_counter() - start
 print('\r脚本执行结束, 总计部署 {} 个 jar 文件, 总耗时 {:.2f} 秒'.format(file_num, total_cost))
