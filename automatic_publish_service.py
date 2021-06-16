@@ -13,7 +13,7 @@ GITHUB_ADDRESS = 'https://github.com/huoxuqingnian/AutomaticDeployService'
 
 # 配置文件
 DEFAULT_CONFIG_FILE_PATH = "./"
-DEFAULT_CONFIG_FILE_NAME = "aps.json"
+DEFAULT_CONFIG_FILE_NAME = "ads.json"
 
 CONFIG_NODE_SERVER = "server"
 CONFIG_NODE_SERVER_HOST = "host"
@@ -35,7 +35,7 @@ CONFIG_INDEX_SEPARATOR = ","
 # 编码
 ENCODING = "utf-8"
 # 配置文件 pattern
-CONFIG_FILE_PATTERN = re.compile(r'^aps(-.+)?\.json$', re.I)
+CONFIG_FILE_PATTERN = re.compile(r'^ads(-.+)?\.json$', re.I)
 
 
 def byte_translate(file_size):
