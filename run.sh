@@ -1,1 +1,1 @@
-python3 ./automatic_publish_service.py
+python3 ./automatic_deploy_service.py
